@@ -1,7 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import { typeScale } from "../styles/TextStyles";
+import { typeScale } from "../styles";
 import IllustrationSignUp from "../../static/images/illustrations/makeup-artist.svg";
 import { CloseIcon } from "../../static/images/icons/close";
 import { PrimaryButton } from "../buttons/Buttons";
