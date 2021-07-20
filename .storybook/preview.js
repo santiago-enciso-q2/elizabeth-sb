@@ -8,8 +8,14 @@ addParameters({
   background: [
     { name: "Default theme", value: "#ffffff", default: true },
     { name: "Dark theme", value: "#050449" }
-  ]
+  ],
+  options: {
+    storySort: {
+      order: ['Welcome', [ 'Intro', 'Getting Started' ], 'Styles', 'Components'],
+    },
+  },
 });
+
 
 addDecorator(withContexts(contexts));
 addDecorator(withKnobs);
