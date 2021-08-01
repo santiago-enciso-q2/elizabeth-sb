@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled, { keyframes, ThemeProvider } from "styled-components";
 import { H1, MediumText } from "../styles";
 import { themes } from "../styles";
-// import PurchaseButton from "../buttons/PurchaseButton";
-// import MockupAnimation from "../animations/MockupAnimation";
-// import WaveBackground from "../backgrounds/WaveBackground";
+import PurchaseButton from "../buttons/PurchaseButton";
+import MockupAnimation from "../animations/MockupAnimation";
+import WaveBackground from "../backgrounds/WaveBackground";
 import {
   PrimaryButton,
   SecondaryButton,
@@ -86,25 +86,24 @@ const HeroSection = () => {
           <H1>Animations</H1>
           <FadeIn />
           <hr />
-          {/*<H1>More Animations</H1>*/}
-          {/*<EmojiCarousel />*/}
-          {/*<WaveBackground />*/}
-          {/*<ContentWrapper>*/}
-          {/*  <TextWrapper>*/}
-          {/*    <Title>*/}
-          {/*      <span>Elizabeth</span> <br />*/}
-          {/*      Design*/}
-          {/*      <br />*/}
-          {/*      System*/}
-          {/*    </Title>*/}
-          {/*    <Description>Welcome to your new site.</Description>*/}
-          {/*    <PurchaseButton*/}
-          {/*      title="Start Learning"*/}
-          {/*      subtitle="120+ hours of video"*/}
-          {/*    />*/}
-          {/*  </TextWrapper>*/}
-          {/*  <MockupAnimation />*/}
-          {/*</ContentWrapper>*/}
+          <H1>More Animations</H1>
+          <WaveBackground />
+          <ContentWrapper>
+            <TextWrapper>
+              <Title>
+                <span>Elizabeth</span> <br />
+                Design
+                <br />
+                System
+              </Title>
+              <Description>Welcome to your new site.</Description>
+              <PurchaseButton
+                title="Start Learning"
+                subtitle="120+ hours of video"
+              />
+            </TextWrapper>
+            <MockupAnimation />
+          </ContentWrapper>
         </Wrapper>
       </ThemeProvider>
   );

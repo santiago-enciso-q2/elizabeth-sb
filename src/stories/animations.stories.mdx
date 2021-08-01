@@ -1,0 +1,23 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import FadeIn from "../components/animations/FadeIn";
+import {action} from "@storybook/addon-actions";
+
+<Meta title="Components/Animations" component={FadeIn} />
+
+# Animations
+
+```
+./src/components/animations/
+```
+
+**EDIT** Buttons are used to trigger actions within an application.
+
+## Usage
+
+**EDIT**  Buttons are used to trigger internal actions within your web applications.
+
+<Preview withToolbar>
+    <Story name="FadeIn">
+       <FadeIn onClick={action('button-click')}/>
+    </Story>
+</Preview>
