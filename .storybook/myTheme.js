@@ -34,7 +34,7 @@ export default create({
     inputBorderRadius: 4,
 
     // bradTitle not showing up because brandImage is too large
-    brandTitle: "💇‍♀️ Elizabeth Design System",
+    brandTitle: "Elizabeth Design System 💇‍♀️ ",
     brandUrl: "https://github.com/santiago-enciso-q2/",
     // brandImage: `${heartIcon}`
 });
