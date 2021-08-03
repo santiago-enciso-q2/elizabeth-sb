@@ -5,4 +5,34 @@ import Header from "../components/layout/Header";
 
 # Pages
 
-- This is the landing page and it's going to have a huge graphic
+The Project uses [React Router Dom](https://reactrouter.com/web/guides/quick-start) to render its components.
+
+
+### Creating New Pages
+
+New Pages can be created with only two steps:
+
+- Create a React components in `src/pages`
+- Add a Route to `src/App.js`
+
+### Example
+
+The homepage uses the React component in `src/pages/index` and is rendered by adding the code below to `src/App.js`
+
+```js
+// ./src/App.js
+import IndexPage from "./pages/index";
+
+<Route path="/" exact={true}>
+    <IndexPage />
+</Route>
+```
+
+The `src/pages` directory has two other pages, `404.js` and `page-2.js` that are created for you to get your started.
+
+```
+├── pages
+|  ├── 404.js
+|  ├── index.js
+|  └── page-2.js
+```
