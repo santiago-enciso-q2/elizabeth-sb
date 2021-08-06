@@ -4,9 +4,6 @@ import { normalize } from "polished";
 
 export const GlobalStyle = createGlobalStyle`
   
-  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-  
   ${normalize()}
 
   body {
@@ -30,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: '';
-    content: none;
+    //content: none;
   }
   table {
     border-collapse: collapse;
