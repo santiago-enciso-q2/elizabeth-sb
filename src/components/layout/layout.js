@@ -1,6 +1,6 @@
 import React from "react";
-import { GlobalStyle } from "../styles/GlobalStyle";
-import Header from "./Header";
+import { GlobalStyle } from "../styles";
+// import Header from "./Header";
 
 function Layout({ children }) {
   return (
