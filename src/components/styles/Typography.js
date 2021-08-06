@@ -16,6 +16,7 @@ export const typeScale = {
 export const H1 = styled.h1`
   font-weight: bold;
   font-size: ${typeScale.header1};
+  font-family: ${primaryFont};
 
   @media (max-width: 450px) {
     font-size: 34px;
@@ -23,7 +24,8 @@ export const H1 = styled.h1`
 `;
 export const H2 = styled.h2`
   font-weight: bold;
-  font-size: 40px;
+  font-size: ${typeScale.header1};
+  font-family: ${primaryFont};
 
   @media (max-width: 450px) {
     font-size: 28px;
@@ -32,7 +34,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
   font-weight: bold;
-  font-size: 30px;
+  font-size: ${typeScale.header1};
 
   @media (max-width: 450px) {
     font-size: 24px;
