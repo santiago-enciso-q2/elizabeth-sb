@@ -1,25 +1,36 @@
 import {Meta, Typeset} from '@storybook/addon-docs/blocks';
+import {primaryFont, secondaryFont} from "../components/styles";
 
 <Meta title="Styles/Typography"/>
 
 # Font & Typography
 ---
+The project's typescale is set to Major Third with a base of 16px.
 
-### Font
+It uses DM Serif Display as the primary font, and it is applied to all the header elements. Paragraphs and smaller text use the Nunito font
 
-**Font:** Nunito Sans
+### Headers
 
-**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
-
-
-### Typography
+> h1, h2, h3, h4 & h5
 
 <Typeset
-    fontFamily="Nunito"
+    fontFamily={primaryFont}
     fontSizes={[
-        28, 25, 22, 20, 18, 16, 14, 12
+        String('48px'), String('39px'), String('31px'), String('25px'), String('20px')
     ]}
-    sampleText="Hello friends, welcome to my birthday"
-    subtitle="test"
+    sampleText="Elizabeth Design System"
+    fontWeight={700}
 />
 
+### Paragraphs, Copywright & Helper Text
+
+> h1, h2, h3, h4 & h5
+
+<Typeset
+    fontFamily={secondaryFont}
+    fontSizes={[
+        String('16px'), String('12px'), String('10px')
+    ]}
+    sampleText="Elizabeth Design System"
+    fontWeight={700}
+/>
