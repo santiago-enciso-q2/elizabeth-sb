@@ -1,21 +1,21 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const primaryFont = "Nunito, monospace";
+export const primaryFont = "DM Serif Display";
+export const secondaryFont = "Nunito"
 
 export const typeScale = {
-  header1: "1.8rem",
-  header2: "1.6rem",
-  header3: "1.4rem",
-  header4: "1.2rem",
-  header5: "1.1rem",
-  paragraph: "1rem",
-  helperText: "0.8rem",
-  copyrightText: "0.7rem",
+    H1: "3rem",
+    H2: "2.4rem",
+    H3: "1.9rem",
+    H4: "1.5rem",
+    H5: "1.25rem",
+    paragraph: "1rem",
+    helperText: "0.8rem",
+    copyrightText: "0.6rem",
 };
 
 export const H1 = styled.h1`
-  font-weight: bold;
-  font-size: ${typeScale.header1};
+  font-size: ${typeScale.H1};
   font-family: ${primaryFont};
 
   @media (max-width: 450px) {
@@ -23,7 +23,6 @@ export const H1 = styled.h1`
   }
 `;
 export const H2 = styled.h2`
-  font-weight: bold;
   font-size: ${typeScale.header1};
   font-family: ${primaryFont};
 
@@ -33,35 +32,27 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-weight: bold;
   font-size: ${typeScale.header1};
+  font-family: ${primaryFont};
 
   @media (max-width: 450px) {
     font-size: 24px;
   }
 `;
 
-export const MediumText = styled.p`
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 130%;
+export const Paragraph = styled.p`
+  font-size: ${typeScale.paragraph};
+  font-family: ${secondaryFont};
 `;
 
-export const Caption = styled.p`
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+export const HelperText = styled.p`
+  font-size: ${typeScale.helperText};
+  font-family: ${secondaryFont};
+
 `;
 
-export const Caption2 = styled.p`
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  text-transform: uppercase;
-`;
+export const CopyrightText = styled.p`
+  font-size: ${typeScale.copyrightText};
+  font-family: ${secondaryFont};
 
-export const SmallText = styled.p`
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 130%;
 `;
