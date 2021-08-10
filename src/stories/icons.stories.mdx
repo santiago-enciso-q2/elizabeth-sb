@@ -1,27 +1,18 @@
-import {Meta, ColorPalette, ColorItem} from '@storybook/addon-docs/blocks';
+import {Meta} from '@storybook/addon-docs/blocks';
+import Icon from "../components/styles/Icon";
+import {Preview, Story} from "@storybook/addon-docs";
 
 <Meta title="Styles/Icons"/>
 
 # Icons
 ---
 
-- Icons will be displayed here
-
-## Light Theme
-
-### Primary Colors
+Hello
 
 <Preview withToolbar>
-    <ColorPalette>
-        <ColorItem title="primary-100" subtitle="" colors={['#7835AC']}/>
-        <ColorItem title="primary-100-dark" subtitle="" colors={['#57267D']}/>
-        <ColorItem title="primary-100-lighter" subtitle="" colors={['#9463BA']}/>
-        <ColorItem title="primary-100-lightest" subtitle="" colors={['#B382D9']}/>
-        <ColorItem title="primary-200" subtitle="" colors={['#17A398']}/>
-        <ColorItem title="primary-300" subtitle="" colors={['#FF1F57']}/>
-        <ColorItem title="primary-400" subtitle="" colors={['#F5FF70']}/>
-    </ColorPalette>
+    <Story name="Icon">
+        <Icon name="image-icon" color="red" size="80px" />
+    </Story>
 </Preview>
 
----
 
