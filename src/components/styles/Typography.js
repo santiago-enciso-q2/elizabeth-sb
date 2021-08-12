@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export const primaryFont = "DM Serif Display";
-export const secondaryFont = "Nunito"
+export const primaryFont = "Indie Flower";
+export const secondaryFont = "'Nunito', sans-serif";
 
 export const typeScale = {
     H1: "3rem",
@@ -23,7 +23,7 @@ export const H1 = styled.h1`
   }
 `;
 export const H2 = styled.h2`
-  font-size: ${typeScale.header1};
+  font-size: ${typeScale.H2};
   font-family: ${primaryFont};
 
   @media (max-width: 450px) {
@@ -32,7 +32,7 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-size: ${typeScale.header1};
+  font-size: ${typeScale.H3};
   font-family: ${primaryFont};
 
   @media (max-width: 450px) {
