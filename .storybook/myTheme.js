@@ -1,5 +1,5 @@
 import { create } from "@storybook/theming/create";
-import {themes, primaryFont} from "../src/components/styles";
+import {themes, secondaryFont} from "../src/components/styles";
 import heartIcon from "../src/static/images/logos/heart-icon.svg"
 
 export default create({
@@ -15,7 +15,7 @@ export default create({
     appBorderRadius: 4,
 
     // Typography
-    fontBase: `${primaryFont}`,
+    fontBase: `${secondaryFont}`,
     fontCode: "monospace",
 
     // Text colors
@@ -34,7 +34,7 @@ export default create({
     inputBorderRadius: 4,
 
     // bradTitle not showing up because brandImage is too large
-    brandTitle: "Elizabeth Design System 💇‍♀️ ",
+    brandTitle: "Elizabeth <br> Design System 💇‍♀️ ",
     brandUrl: "https://github.com/santiago-enciso-q2/",
     // brandImage: `${heartIcon}`
 });
