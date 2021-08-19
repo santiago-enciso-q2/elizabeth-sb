@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { typeScale, primaryFont } from "../styles";
+import { typeScale, secondaryFont } from "../styles";
 import { applyStyleModifiers } from "styled-components-modifiers";
 
 const BUTTON_MODIFIERS = {
@@ -9,7 +9,7 @@ const BUTTON_MODIFIERS = {
     padding: auto 8px ;
   `,
   large: () => `
-    font-size: ${typeScale.header5};
+    font-size: ${typeScale.H5};
     padding: 16px 24px;
   `,
 
@@ -99,7 +99,7 @@ const Button = styled.button`
   border-radius: 5px;
   min-width: 100px;
   cursor: pointer;
-  font-family: ${primaryFont};
+  font-family: ${secondaryFont};
   border: none;
   /* border-box not working in secondary button */
   box-sizing: border-box;
@@ -112,9 +112,9 @@ const Button = styled.button`
     border: none;
     background-color: ${(props) => props.theme.button.primaryHoverColor};
     color: ${(props) => props.theme.button.textColorOnPrimary};
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
-      0px 30px 60px rgba(23, 0, 102, 0.5),
-      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+      0 30px 60px rgba(23, 0, 102, 0.5),
+      inset 0 0 0 0.5px rgba(255, 255, 255, 0.5);
     transform: translateY(-1px);
   }
 
