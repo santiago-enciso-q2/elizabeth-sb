@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { menuData } from "../../data/menuData";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../../static/images/logos/logo.svg";
 import MenuButton from "../buttons/MenuButton";
 import MenuTooltip from "../tooltips/MenuTooltip";
 import hamburgerSVG from "../../static/images/icons/hamburger.svg";
+import Icon from "../styles/Icon";
+import {primaryFont, colors} from "../styles";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Header() {
   return (
     <Wrapper>
       <Link to="/">
-        <img src={logo} alt="Logo" />
+        <Icon name="image" color={colors.primary100}/>
       </Link>
       <MenuWrapper count={menuData.length} ref={ref}>
         {menuData.map((item, index) =>
@@ -70,11 +71,14 @@ const Wrapper = styled.div`
   top: 60px;
   display: grid;
   grid-template-columns: 44px auto;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
+  font-family: ${primaryFont};
+  color: black;
   padding: 0 30px;
   align-items: center;
-  background: #7835AC;
+  border: 3px solid ${colors.primary100};
+  border-radius: 5px;
   @media (max-width: 768px) {
     top: 30px;
   }
