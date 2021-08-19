@@ -1,22 +1,21 @@
-import courseImage from "../static/images/icons/courses.svg";
-import tutorialsImage from "../static/images/icons/tutorials.svg";
-import pricingImage from "../static/images/icons/pricing.svg";
+import homeIcon from "../static/images/icons/home.svg";
+import emailImage from "../static/images/icons/email.svg";
+import phoneImage from "../static/images/icons/phone.svg";
 import searchImage from "../static/images/icons/search.svg";
-import accountImage from "../static/images/icons/account.svg";
-import profiletImage from "../static/images/icons/profile.svg";
-import settingsImage from "../static/images/icons/settings.svg";
-import signoutImage from "../static/images/icons/signout.svg";
+import profileImage from "../static/images/icons/profile.svg";
+import settingsImage from "../static/images/icons/gear.svg";
+import linkImage from "../static/images/icons/link.svg";
 
 export const menuData = [
-  { title: "Courses", icon: `${courseImage}`, link: "/courses" },
-  { title: "Tutorials", icon: `${tutorialsImage}`, link: "/tutorials" },
-  { title: "Pricing", icon: `${pricingImage}`, link: "/Pricing" },
+  { title: "Home", icon: `${homeIcon}`, link: "/" },
+  { title: "Email", icon: `${emailImage}`, link: "/email" },
+  { title: "Call", icon: `${phoneImage}`, link: "/call" },
   { title: "", icon: `${searchImage}`, link: "/search" },
-  { title: "", icon: `${accountImage}`, link: "/account" },
+  { title: "", icon: `${profileImage}`, link: "/account" },
 ];
 
 export const toolTipData = [
-  { title: "Profile", icon: `${profiletImage}`, link: "/profile" },
+  { title: "Profile", icon: `${profileImage}`, link: "/profile" },
   { title: "Settings", icon: `${settingsImage}`, link: "/settings" },
-  { title: "Sign Out", icon: `${signoutImage}`, link: "/signout" },
+  { title: "Sign Out", icon: `${linkImage}`, link: "/signout" },
 ];
