@@ -2,11 +2,11 @@ import Layout from "../components/layout/layout";
 import HeroSection from "../components/sections/HeroSection";
 
 function IndexPage() {
-  return (
-    <Layout>
-      <HeroSection />
-    </Layout>
-  );
+    return (
+        <Layout>
+            <HeroSection/>
+        </Layout>
+    );
 }
 
 export default IndexPage;

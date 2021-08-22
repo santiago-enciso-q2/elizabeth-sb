@@ -1,23 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { toolTipData } from "../../data/menuData";
+import {toolTipData} from "../../data/menuData";
 import MenuButton from "../buttons/MenuButton";
 
 export default function MenuTooltip(props) {
-  const { isOpen } = props;
-  return (
-    <Wrapper isOpen={isOpen}>
-      {toolTipData.map((item, index) => (
-        <MenuButton item={item} key={index} />
-      ))}
-    </Wrapper>
-  );
+    const {isOpen} = props;
+    return (
+        <Wrapper isOpen={isOpen}>
+            {toolTipData.map((item, index) => (
+                <MenuButton item={item} key={index}/>
+            ))}
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.div`
   background: rgba(15, 14, 71, 0.3);
-  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25),
-    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25),
+  inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(40px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px;
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   transition: 0.3s ease-in-out;
   visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
   transform: ${(props) =>
-    props.isOpen
-      ? "skewY(0deg) rotate(0deg) translateY(0px);"
-      : "skewY(-5deg) rotate(5deg) translateY(-30px);"};
+          props.isOpen
+                  ? "skewY(0deg) rotate(0deg) translateY(0px);"
+                  : "skewY(-5deg) rotate(5deg) translateY(-30px);"};
 `;

@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default function MenuButton(props) {
-  const { item, onClick } = props;
-  return (
-    <Link to={item.link} onClick={onClick}>
-      <MenuItem title={item.title}>
-        <img src={item.icon} alt={item.title} />
-        {item.title}
-      </MenuItem>
-    </Link>
-  );
+    const {item, onClick} = props;
+    return (
+        <Link to={item.link} onClick={onClick}>
+            <MenuItem title={item.title}>
+                <img src={item.icon} alt={item.title}/>
+                {item.title}
+            </MenuItem>
+        </Link>
+    );
 }
 
 const MenuItem = styled.div`
@@ -26,7 +26,7 @@ const MenuItem = styled.div`
 
   :hover {
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
-      inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
   }
 `;

@@ -7,15 +7,15 @@ import settingsImage from "../static/images/icons/gear.svg";
 import linkImage from "../static/images/icons/link.svg";
 
 export const menuData = [
-  { title: "Home", icon: `${homeIcon}`, link: "/" },
-  { title: "Email", icon: `${emailImage}`, link: "/email" },
-  { title: "Call", icon: `${phoneImage}`, link: "/call" },
-  { title: "", icon: `${searchImage}`, link: "/search" },
-  { title: "", icon: `${profileImage}`, link: "/account" },
+    {title: "Home", icon: `${homeIcon}`, link: "/"},
+    {title: "Email", icon: `${emailImage}`, link: "/email"},
+    {title: "Call", icon: `${phoneImage}`, link: "/call"},
+    {title: "", icon: `${searchImage}`, link: "/search"},
+    {title: "", icon: `${profileImage}`, link: "/account"},
 ];
 
 export const toolTipData = [
-  { title: "Profile", icon: `${profileImage}`, link: "/profile" },
-  { title: "Settings", icon: `${settingsImage}`, link: "/settings" },
-  { title: "Sign Out", icon: `${linkImage}`, link: "/signout" },
+    {title: "Profile", icon: `${profileImage}`, link: "/profile"},
+    {title: "Settings", icon: `${settingsImage}`, link: "/settings"},
+    {title: "Sign Out", icon: `${linkImage}`, link: "/signout"},
 ];

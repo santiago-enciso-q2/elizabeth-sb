@@ -1,11 +1,10 @@
-import { createGlobalStyle } from "styled-components";
-import { themes, themes as theme } from "./ColorStyles";
-import { normalize } from "polished";
+import {createGlobalStyle} from "styled-components";
+import {themes, themes as theme} from "./ColorStyles";
+import {normalize} from "polished";
 
 export const GlobalStyle = createGlobalStyle`
-  
-  ${normalize()}
 
+  ${normalize()}
   body {
     line-height: 1;
     font-family: Nunito, monospace;
@@ -18,17 +17,21 @@ export const GlobalStyle = createGlobalStyle`
       background: ${themes.dark.backgroundColor};
     }
   }
+
   ol, ul {
     list-style: none;
   }
+
   blockquote, q {
     quotes: none;
   }
+
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: '';
     //content: none;
   }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;

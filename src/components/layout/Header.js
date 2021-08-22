@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import { menuData } from "../../data/menuData";
-import { Link } from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
+import {menuData} from "../../data/menuData";
+import {Link} from "react-router-dom";
 import styled from "styled-components";
 import MenuButton from "../buttons/MenuButton";
 import MenuTooltip from "../tooltips/MenuTooltip";
@@ -9,61 +9,62 @@ import Icon from "../styles/Icon";
 import {primaryFont, colors} from "../styles";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef();
-  const toolTipRef = useRef();
-  function handleClick(event) {
-    event.preventDefault();
-    setIsOpen(!isOpen);
-  }
+    const [isOpen, setIsOpen] = useState(false);
+    const ref = useRef();
+    const toolTipRef = useRef();
 
-  function handleClickOutside(event) {
-    if (
-      ref.current &&
-      !ref.current.contains(event.target) &&
-      !toolTipRef.current.contains(event.target)
-    ) {
-      console.log("Document is clicked");
-      setIsOpen(false);
+    function handleClick(event) {
+        event.preventDefault();
+        setIsOpen(!isOpen);
     }
-  }
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+    function handleClickOutside(event) {
+        if (
+            ref.current &&
+            !ref.current.contains(event.target) &&
+            !toolTipRef.current.contains(event.target)
+        ) {
+            console.log("Document is clicked");
+            setIsOpen(false);
+        }
+    }
 
-  return (
-    <Wrapper>
-      <Link to="/">
-        <Icon name="image" color={colors.primary100}/>
-      </Link>
-      <MenuWrapper count={menuData.length} ref={ref}>
-        {menuData.map((item, index) =>
-          item.link === "/account" ? (
-            <MenuButton
-              item={item}
-              key={index}
-              onClick={(event) => handleClick(event)}
-            />
-          ) : (
-            <MenuButton item={item} key={index} />
-          )
-        )}
-        <HamburgerWrapper>
-          <MenuButton
-            item={{ title: "", icon: hamburgerSVG, link: "" }}
-            onClick={(event) => handleClick(event)}
-          />
-        </HamburgerWrapper>
-      </MenuWrapper>
-      <div ref={toolTipRef}>
-        <MenuTooltip isOpen={isOpen} />
-      </div>
-    </Wrapper>
-  );
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    return (
+        <Wrapper>
+            <Link to="/">
+                <Icon name="image" color={colors.primary100}/>
+            </Link>
+            <MenuWrapper count={menuData.length} ref={ref}>
+                {menuData.map((item, index) =>
+                    item.link === "/account" ? (
+                        <MenuButton
+                            item={item}
+                            key={index}
+                            onClick={(event) => handleClick(event)}
+                        />
+                    ) : (
+                        <MenuButton item={item} key={index}/>
+                    )
+                )}
+                <HamburgerWrapper>
+                    <MenuButton
+                        item={{title: "", icon: hamburgerSVG, link: ""}}
+                        onClick={(event) => handleClick(event)}
+                    />
+                </HamburgerWrapper>
+            </MenuWrapper>
+            <div ref={toolTipRef}>
+                <MenuTooltip isOpen={isOpen}/>
+            </div>
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.div`
@@ -96,6 +97,7 @@ const MenuWrapper = styled.div`
     > a {
       display: none;
     }
+
     grid-template-columns: auto;
   }
 `;

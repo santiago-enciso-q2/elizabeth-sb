@@ -6,14 +6,14 @@ import waveSVG3 from "../../static/images/waves/hero-wave3.svg";
 import waveSVG3dark from "../../static/images/waves/hero-wave3-dark.svg";
 
 export default function WaveBackground() {
-  return (
-    <Wrapper>
-      <Background />
-      <Wave src={waveSVG1} style={{ top: "100px", filter: "blur(60px)" }} />
-      <Wave src={waveSVG2} style={{ top: "350px" }} />
-      <BottomWave src={waveSVG3} style={{ top: "550px" }} />
-    </Wrapper>
-  );
+    return (
+        <Wrapper>
+            <Background/>
+            <Wave src={waveSVG1} style={{top: "100px", filter: "blur(60px)"}}/>
+            <Wave src={waveSVG2} style={{top: "350px"}}/>
+            <BottomWave src={waveSVG3} style={{top: "550px"}}/>
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.div`

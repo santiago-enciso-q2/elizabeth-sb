@@ -1,16 +1,15 @@
-
 import React from "react";
 import styled from "styled-components";
-import { typeScale } from "../styles";
+import {typeScale} from "../styles";
 import IllustrationSignUp from "../../static/images/illustrations/makeup-artist.svg";
-import { CloseIcon } from "../../static/images/icons/close";
-import { PrimaryButton } from "../buttons/Buttons";
-import { useSpring, animated, config } from "react-spring";
+import {CloseIcon} from "../../static/images/icons/close";
+import {PrimaryButton} from "../buttons/Buttons";
+import {useSpring, animated, config} from "react-spring";
 
 const ModalWrapper = styled.div`
   width: 800px;
   height: 580px;
-  box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 16px 1px rgba(0, 0, 0, 0.25);
   background-color: ${(props) => props.theme.formElementBackground};
 
   color: ${(props) => props.theme.textOnFormElementBackground};
@@ -22,7 +21,7 @@ const ModalWrapper = styled.div`
 `;
 
 const SignUpHeader = styled.h3`
-  font-size: ${typeScale.header3};
+  font-size: ${typeScale.H3};
 `;
 
 const SignUpText = styled.p`
@@ -43,7 +42,7 @@ const CloseModalButton = styled.button`
   padding: 0;
 `;
 
-export const SignUpModal = ({ showModal, setShowModal }) => {
+export const SignUpModal = ({showModal, setShowModal}) => {
     const animation = useSpring({
         opacity: showModal ? 1 : 0,
         transform: showModal ? `translateY(0)` : `translateY(-200%)`,
@@ -62,7 +61,7 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
                 <SignUpText>Sign up today to get access to cool things!</SignUpText>
                 <PrimaryButton>Sign Up!</PrimaryButton>
                 <CloseModalButton aria-label="Close modal">
-                    <CloseIcon />
+                    <CloseIcon/>
                 </CloseModalButton>
             </ModalWrapper>
         </animated.div>

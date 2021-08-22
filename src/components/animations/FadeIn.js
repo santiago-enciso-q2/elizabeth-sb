@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { animated, useSpring } from "react-spring";
-import { PrimaryButton} from "../buttons/Buttons";
+import React, {useState} from "react";
+import {animated, useSpring} from "react-spring";
+import {PrimaryButton} from "../buttons/Buttons";
 
 const FadeIn = () => {
     const [showText, setShowText] = useState(true);
