@@ -7,6 +7,8 @@ import MenuTooltip from "../tooltips/MenuTooltip";
 import hamburgerSVG from "../../static/images/icons/hamburger.svg";
 import Icon from "../styles/Icon";
 import {primaryFont, colors} from "../styles";
+import Grid from "../layout/Grid"
+import Row from "../layout/Row"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +52,7 @@ export default function Header() {
                             onClick={(event) => handleClick(event)}
                         />
                     ) : (
-                        <MenuButton item={item} key={index}/>
+                        <MenuButton item={item} key={index} />
                     )
                 )}
                 <HamburgerWrapper>
@@ -67,26 +69,16 @@ export default function Header() {
     );
 }
 
-const Wrapper = styled.div`
-  position: absolute;
-  top: 60px;
-  display: grid;
+const Wrapper = styled(Grid)`
   grid-template-columns: 44px auto;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
   font-family: ${primaryFont};
-  color: black;
-  padding: 0 30px;
-  align-items: center;
+  color: ${colors.primary100};
+  padding: 0 .5rem;
+  align-items: center !important; 
   border: 3px solid ${colors.primary100};
   border-radius: 5px;
-  @media (max-width: 768px) {
-    top: 30px;
-  }
-  @media (max-width: 450px) {
-    top: 20px;
-    padding: 0 20px;
-  }
 `;
 const MenuWrapper = styled.div`
   display: grid;

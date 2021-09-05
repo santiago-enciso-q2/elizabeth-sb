@@ -24,6 +24,10 @@ export const colors = {
 };
 
 export const themes = {
+    breakpoints: {
+        s: "only screen and (max-width: 65rem)",
+        m: "only screen and (max-width: 70rem)",
+    },
     light: {
         textPrimary: `${colors.neutral100}`,
         textSecondary: `${colors.primary200}`,

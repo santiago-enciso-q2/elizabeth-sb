@@ -13,10 +13,10 @@ module.exports = {
       }
     },
     "@storybook/addon-essentials",
-    "@storybook/addon-contexts/register",
     "@storybook/addon-backgrounds",
     "@storybook/addon-knobs",
     "@storybook/addon-a11y",
+    "@storybook/addon-contexts/register",
     "@storybook/addon-docs/blocks/register"
   ]
 }
