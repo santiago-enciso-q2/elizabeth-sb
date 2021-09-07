@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../styles"
+import { themes } from "../../styles"
 
 const FullWidthSection = styled.section`
     grid-column: 1 / span 14;

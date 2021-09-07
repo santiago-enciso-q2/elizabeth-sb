@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components"
 
-import Grid from "./Grid"
-import FullWidthSection from "./FullWidthSection"
-import MaxWidthSection from "./MaxWidthSection"
-import Row from "./Row";
+/* Grid System */
+import Grid from "./GridSystem/Grid"
+import FullWidthSection from "./GridSystem/FullWidthSection"
+import MaxWidthSection from "./GridSystem/MaxWidthSection"
+import Row from "./GridSystem/Row";
 
 const Header = styled(FullWidthSection)`
   padding: 4rem 1.5rem;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../styles"
+import { themes } from "../../styles"
 
 const Row = styled.div`
     grid-column-start: ${(props) => (props.sd ? props.sd : "1")};

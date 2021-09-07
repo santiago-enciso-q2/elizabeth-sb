@@ -7,8 +7,13 @@ import MenuTooltip from "../tooltips/MenuTooltip";
 import hamburgerSVG from "../../static/images/icons/hamburger.svg";
 import Icon from "../styles/Icon";
 import {primaryFont, colors} from "../styles";
-import Grid from "../layout/Grid"
-import Row from "../layout/Row"
+
+/* Grid System */
+import Grid from "./GridSystem/Grid"
+import FullWidthSection from "./GridSystem/FullWidthSection"
+import MaxWidthSection from "./GridSystem/MaxWidthSection"
+import Row from "./GridSystem/Row";
+
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
